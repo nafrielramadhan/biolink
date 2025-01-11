@@ -1,0 +1,105 @@
+@font-face {
+  font-family: helvetica-bold;
+  src: url(../assets/Helvetica-Bold.ttf);
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.container {
+  margin: 26px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+}
+
+.name {
+  font-size: 25px;
+}
+
+nav {
+  margin: 26px;
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: -1px;
+  color: whitesmoke;
+}
+
+.navbar-button {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-weight: normal;
+}
+
+.description {
+  font-family: helvetica-bold, sans-serif;
+  font-size: 100px;
+  letter-spacing: -6px;
+}
+
+.information {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+
+h3 {
+  padding-bottom: 1px;
+}
+
+/* make gradient text (src: GeeksForGeeks */
+gradient-text {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.progress {
+  font-family: helvetica-bold;
+  font-size: 100px;
+  letter-spacing: -6px;
+}
+
+/* make underline gradient (src: DevSamples) */
+gradient-underline {
+  padding-bottom: 0px;
+  position: relative;
+  text-decoration: none;
+}
+
+gradient-underline::after {
+  background: linear-gradient(to right, #0a866c, #70ffc3);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4.5px;
+  width: 100%;
+}
+
+/* green gradient circle in the background (src: youtube)*/
+.absolute {
+  position: absolute;
+}
+
+.gradient-circle {
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  position: relative;
+  bottom: 100px;
+  left: 1100px;
+  opacity: 0.42;
+  filter: blur(90px);
+  background-color: hsl(156, 65%, 38%);
+}
